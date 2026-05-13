@@ -3,7 +3,11 @@ import Anthropic from '@anthropic-ai/sdk';
 import { buildPromptFromChunks } from '@/lib/buildSystemPrompt';
 import { retrieveChunks } from '@/lib/retrieval';
 
-const client = new Anthropic();
+let anthropicClient: Anthropic | null = null;
+function getAnthropic(): Anthropic {
+  if (!anthropicClient) anthropicClient = new Anthropic();
+  return anthropicClient;
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -28,7 +32,7 @@ export async function POST(req: NextRequest) {
     const readable = new ReadableStream({
       async start(controller) {
         try {
-          const stream = client.messages.stream({
+          const stream = getAnthropic().messages.stream({
             model: 'claude-haiku-4-5-20251001',
             max_tokens: 1024,
             system: systemPrompt,
@@ -38,7 +42,7 @@ export async function POST(req: NextRequest) {
             })),
           });
 
-          stream.on('text', (text) => {
+          stream.on('text', (text: string) => {
             controller.enqueue(encoder.encode(text));
           });
 

@@ -7,7 +7,11 @@ interface EmbeddedChunk extends Chunk {
   embedding: number[];
 }
 
-const openai = new OpenAI();
+let openaiClient: OpenAI | null = null;
+function getOpenAI(): OpenAI {
+  if (!openaiClient) openaiClient = new OpenAI();
+  return openaiClient;
+}
 
 // Loaded once at first call, reused across requests
 let cachedEmbeddings: EmbeddedChunk[] | null = null;
@@ -33,7 +37,7 @@ function cosineSimilarity(a: number[], b: number[]): number {
 }
 
 export async function retrieveChunks(query: string, topK = 5): Promise<Chunk[]> {
-  const response = await openai.embeddings.create({
+  const response = await getOpenAI().embeddings.create({
     model: 'text-embedding-3-small',
     input: query,
   });
