@@ -1,0 +1,426 @@
+{
+  "site": {
+    "title": "Luke Duran",
+    "description": "Technical Product Manager building innovative products at the intersection of technology and business.",
+    "url": "https://lukeduran.com"
+  },
+  "person": {
+    "email": "hello@luketduran.com",
+    "socials": {
+      "linkedin": "https://linkedin.com/in/luketduran",
+      "github": "https://github.com/lukeduran"
+    }
+  },
+  "cta": {
+    "resumePdfPath": "/Luke-Duran-Resume.pdf",
+    "resumeLabel": "Download Resume"
+  },
+  "chat": {
+    "intro": "Hi, I'm Luke! I'd love to connect in person, but this is a good place to start — ask it anything you'd ask me."
+  },
+  "sections": {
+    "showProjects": true,
+    "showEducation": true
+  },
+  "professional": {
+    "hero": {
+      "name": "Luke Duran",
+      "role": "Technical Product Manager",
+      "location": "Remote",
+      "valueProp": "I specialize in the unglamorous work of making complex, data-heavy systems feel simple and delightful.",
+      "currently": "helping score 92M+ single-family homes across safety, comfort, operations, resilience, and energy systems.",
+      "currentlyEnabled": true,
+      "badges": ["Product", "Data", "AI"],
+      "headshot": "/images/headshot.png"
+    },
+    "about": {
+      "paragraph": "I’m a Technical Product Manager focused on building reliable, data-heavy platforms that enable high-quality product experiences at scale. My work centers on backend systems, data foundations, and applied AI — translating complex domains into systems teams can trust and products users can rely on. I care deeply about clarity, operational rigor, and execution, and I tend to stay closest to the parts of the work where system design, product decisions, and real-world constraints meet.",
+      "bullets": []
+    },
+    "experience": [
+      {
+        "company": "Pearl",
+        "location": "Remote",
+        "industry": "PropTech",
+        "start": "2022",
+        "end": "Present",
+        "logo": "/images/logos/pearl.svg",
+        "roles": [
+          {
+            "title": "Technical Product Manager",
+            "start": "2022",
+            "end": "Present",
+            "impact": "As a Technical Product Manager at Pearl, I lead strategy and development for the company’s core products - the Pearl SCORE and Pearl SCORE Report. I define product direction in collaboration with leadership, shape the roadmap across data and platform capabilities, and ensure our primary go-to-market vehicle supports revenue growth and long-term scalability.",
+            "highlights": [
+              "Lead strategy and development for the Pearl SCORE and SCORE Report, the company’s primary revenue",
+              "Own the API layer and core platform capabilities enabling scalable partner distribution and product",
+              "Contributed to the architectural evolution from a certification-focused platform to a national data product spanning 96M+ single-family homes."
+            ]
+          }
+        ],
+        "tech": [
+          { "name": "React" },
+          { "name": "Python" },
+          { "name": "PostgreSQL" },
+          { "name": "AWS", "icon": "/images/tech/aws.svg" },
+          { "name": "ChatGPT", "icon": "/images/tech/chatgpt.svg" },
+          { "name": "Windsurf" }
+        ],
+        "domains": ["SaaS", "Analytics", "B2B"]
+      },
+      {
+        "company": "The Escape Game",
+        "location": "Nashville, TN",
+        "industry": "Entertainment & Retail",
+        "start": "2015",
+        "end": "2021",
+        "logo": "/images/logos/theescapegame.svg",
+        "roles": [
+          {
+            "title": "Operations Manager",
+            "start": "2015",
+            "end": "2017",
+            "impact": "As the company’s first Product Manager, I helped establish the product function, define roadmap priorities alongside executive leadership, and build both internal platform capabilities and consumer-facing digital products that expanded revenue beyond physical retail.",
+            "highlights": [
+              "First Product Manager; helped establish the product function and define roadmap priorities with executive leadership.",
+              "Led product development for TEG Workspace (now Cosmo), establishing the internal platform that powered rapid retail expansion and scalable operations.",
+              "Built and launched consumer-facing digital products (Remote Adventures, Unlocked) and branded activations for PwC, Disney+, Nickelodeon, and Amazon Prime Studios.",
+              "Partnered with executive and marketing leadership to optimize the company’s north star metric (“fill rate”), including launching dynamic pricing experiments through a custom booking platform."
+            ]
+          },
+          {
+            "title": "Manager, Data & Analytics",
+            "start": "2017",
+            "end": "2019",
+            "impact": "Launched 3 new product lines that generated $2M+ in revenue",
+            "highlights": [
+              "Led product development for new experience formats",
+              "Collaborated with design and operations teams to launch new products",
+              "Managed product roadmap and prioritization"
+            ]
+          },
+          {
+            "title": "Product Manager",
+            "start": "2019",
+            "end": "2021",
+            "impact": "Managed $10M+ product portfolio and improved customer satisfaction by 25%",
+            "highlights": [
+              "Managed a portfolio of 5 products with $10M+ annual revenue",
+              "Built and led a cross-functional team of 12 engineers and designers",
+              "Launched 3 major features that improved customer satisfaction by 25%"
+            ]
+          }
+        ],
+        "tech": [
+          { "name": "Python" },
+          { "name": "Kubernetes" },
+          { "name": "Microservices" },
+          { "name": "GraphQL" }
+        ],
+        "domains": ["Enterprise", "Cloud", "Platform"]
+      },
+      {
+        "company": "DigitalTenn",
+        "location": "Nashville, TN",
+        "industry": "Consulting",
+        "start": "2021",
+        "end": "2025",
+        "logo": "/images/logos/digitaltenn.svg",
+        "roles": [
+          {
+            "title": "Founder",
+            "start": "2021",
+            "end": "2025",
+            "impact": "Founded and led DigitalTenn, a product and software consultancy focused on building scalable web and mobile platforms and data-driven systems for growing businesses. Partnered directly with founders and operators to translate business objectives into clear product strategy and technical execution.",
+            "highlights": [
+              "Founded and led a product consultancy building scalable web and mobile platforms for growing businesses.",
+              "Owned product strategy and end-to-end delivery for custom web and mobile applications, guiding initiatives from discovery through launch to drive revenue growth and operational scalability.",
+              "Advised early-stage teams on product positioning, prioritization, and scalable system design under resource constraints."
+            ]
+          }
+        ],
+        "tech": [
+          { "name": "React Native" },
+          { "name": "TypeScript" },
+          { "name": "Firebase" }
+        ],
+        "domains": ["Mobile", "Startup", "Consumer"]
+      }
+    ],
+    "projects": [
+      {
+        "slug": "pearl-app-and-registry",
+        "title": "Pearl App & Registry",
+        "tagline": "Home Performance for 92M Homes",
+        "summary": "A comprehensive analytics platform that leverages machine learning to provide actionable insights for product teams.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "TypeScript" },
+          { "name": "Python" },
+          { "name": "PostgreSQL" },
+          { "name": "TensorFlow" }
+        ],
+        "links": [
+          { "label": "Visit Registry", "url": "https://registry.pearlscore.com" },
+          { "label": "View Code", "url": "https://github.com/lukeduran/project-alpha" }
+        ],
+        "heroImage": "/images/projects/project-alpha.svg",
+        "caseStudy": {
+          "meta": {
+            "role": "Technical Product Manager",
+            "timeframe": "2022 – Present",
+            "company": "Project Alpha",
+            "impactSummary": "Product teams make data-driven decisions 3x faster; user engagement increased 45%."
+          },
+          "sections": {
+            "context": [
+              "When I joined Pearl, the company operated primarily as a certification business. The core value proposition centered around validating home energy performance through structured certification workflows. Over time, I began championing a benefits-forward approach to communicating home performance — one designed to resonate with homeowners beyond the sustainability sphere. Rather than framing value strictly around energy efficiency, I pushed for positioning home performance in terms of tangible homeowner outcomes.",
+              "That thinking initially took shape as conceptual pillars (Safe, Smart, Healthy, Efficient), and through collaboration with leadership and cross-functional teams, evolved into a more durable structure — Safety, Comfort, Operations, Resilience, and Energy (SCORE). While the framework was refined over time, it catalyzed a shift in how we defined the Pearl SCORE: not just as a certification artifact, but as a standardized, homeowner-relevant representation of home performance.",
+              "That shift in framing directly informed the design of the Pearl SCORE and Registry — defining them not as certification artifacts, but as scalable, homeowner-facing products capable of supporting distribution and long-term revenue growth."
+            ],
+            "businessChallenge": [
+              "Defining the Pearl SCORE required more than packaging certification data — it required designing a scoring system that meaningfully represented a home’s performance across our pillars: Safety, Comfort, Operations, Resilience, and Energy. The ambition was to create a standardized, homeowner-relevant representation of home performance that could scale nationally, not just serve as an output of individual certifications.",
+              "The complexity was twofold. First, the SCORE needed conceptual integrity. It had to reflect real homeowner outcomes in a way that was defensible, explainable, and grounded in measurable signals across each pillar. Second, it needed to operate at national scale. We set out to generate scores for 96M+ single-family homes across the United States — many of which would never undergo a full Pearl certification.",
+              "That meant designing a system capable of operating with incomplete and inconsistent inputs. In many cases, the only available data sources were permit records, assessor data, public datasets, homeowner-reported information, and certification artifacts where available. Critical performance characteristics were often missing or only partially observable.",
+              "The core product challenge became clear: how do you generate a credible, standardized performance score when inputs are constrained — and still maintain consistency, transparency, and scalability across tens of millions of properties?",
+              "Solving this required defining defensible assumptions where data gaps existed, establishing consistent logic for imputing missing information, and balancing precision with scalability. The SCORE could not be arbitrary — but it also could not be perfect. It had to be directionally accurate, explainable to homeowners and partners, and resilient under real-world data limitations."
+            ],
+            "strategyTradeoffs": [
+              "Built a comprehensive analytics platform with real-time data processing, machine learning-powered recommendations, and customizable dashboards."
+            ],
+            "resultsImpact": [
+              "Enabled product teams to make data-driven decisions 3x faster and increased user engagement by 45% through actionable insights."
+            ]
+          }
+        },
+        "content": "## Overview\n\nProject Alpha is a cutting-edge analytics platform designed to help product teams make data-driven decisions. The platform processes millions of data points daily and provides real-time insights through an intuitive dashboard.\n\n## Key Features\n\n- Real-time data processing and visualization\n- Machine learning-powered recommendations\n- Customizable dashboards and reports\n- API for third-party integrations\n\n## Technical Highlights\n\nBuilt with modern web technologies and scalable architecture, Project Alpha handles high-throughput data processing while maintaining sub-second response times for user queries."
+      },
+      {
+        "slug": "the-escape-game-workspace",
+        "title": "TEG Workspace",
+        "tagline": "An OS for 50+ Retail Stores",
+        "summary": "A modern collaboration platform that helps distributed teams work together more effectively through async communication and task management.",
+        "stack": [
+          { "name": "React" },
+          { "name": "Node.js" },
+          { "name": "MongoDB" },
+          { "name": "WebSockets" },
+          { "name": "Redis" }
+        ],
+        "links": [
+          { "label": "View Code", "url": "https://github.com/lukeduran/project-beta" }
+        ],
+        "heroImage": "/images/projects/project-beta.svg",
+        "content": "## Overview\n\nProject Beta addresses the challenges of remote team collaboration by providing a unified platform for communication, task management, and project tracking.\n\n## Key Features\n\n- Real-time messaging and notifications\n- Kanban-style task boards\n- Video conferencing integration\n- Automated workflow triggers\n\n## Impact\n\nUsed by 50+ teams to improve collaboration efficiency and reduce meeting overhead by 40%."
+      },
+      {
+        "slug": "project-gamma",
+        "title": "Project Gamma",
+        "tagline": "E-commerce Optimization Suite",
+        "summary": "A suite of tools that helps e-commerce businesses optimize their conversion rates through A/B testing and personalization.",
+        "stack": [
+          { "name": "Vue.js" },
+          { "name": "Django" },
+          { "name": "PostgreSQL" },
+          { "name": "Docker" },
+          { "name": "Kubernetes" }
+        ],
+        "links": [
+          { "label": "View Prototype", "url": "https://project-gamma.demo.com" }
+        ],
+        "heroImage": "/images/projects/project-gamma.svg",
+        "content": "## Overview\n\nProject Gamma provides e-commerce businesses with powerful tools to test, optimize, and personalize their customer experience.\n\n## Key Features\n\n- Visual A/B testing builder\n- Real-time personalization engine\n- Conversion funnel analytics\n- Customer segmentation tools\n\n## Results\n\nHelped clients increase conversion rates by an average of 22% through data-driven optimization."
+      }
+    ],
+    "skills": {
+      "Product": [
+        "Product Strategy",
+        "Roadmap Planning",
+        "User Research",
+        "Data Analysis",
+        "Agile/Scrum"
+      ],
+      "Technical": [
+        "Full-Stack Development",
+        "System Architecture",
+        "API Design",
+        "Cloud Infrastructure",
+        "DevOps"
+      ],
+      "Leadership": [
+        "SQL",
+        "Python",
+        "Data Visualization",
+        "A/B Testing",
+        "Machine Learning Basics"
+      ]
+    },
+    "education": [
+      {
+        "school": "Belmont University",
+        "degree": "B.B.A. Music Business",
+        "dates": "2014-2017",
+        "notes": "",
+        "logo": "/images/logos/belmont-university.svg"
+      },
+      {
+        "school": "Vanderbilt University",
+        "degree": "Full Stack Development Bootcamp",
+        "dates": "2019",
+        "notes": "",
+        "logo": "/images/logos/vanderbilt-university.svg"
+      }
+    ],
+    "contact": {
+      "heading": "Contact",
+      "copy": "Let's connect and discuss opportunities.",
+      "buttonLabel": "Email Luke"
+    }
+  },
+  "personal": {
+    "hero": {
+      "name": "Luke Duran",
+      "role": "I Like Building Things",
+      "location": "Nashville, TN",
+      "valueProp": "Building, operating, and leaving things better than I found them — at work and at home.",
+      "currently": "helping my wife build a national romance-only bookstore brand out of the back of a trailer and teaching my toddler about the world.",
+      "currentlyEnabled": true,
+      "badges": ["Dad", "Builder", "Operator"],
+      "headshot": "/images/headshot.png"
+    },
+    "about": {
+      "paragraph": "I’m a dad, a builder, and someone who likes to stay close to the work. I spend a lot of my time building and running small businesses, shipping ideas, and learning by doing — whether that’s working through messy systems, figuring things out as I go, or writing the occasional song when I need a creative reset. I’m most at home when I’m building something useful, taking responsibility for how it runs, and leaving things a little better than I found them — at work, at home, and everywhere in between.",
+      "bullets": []
+    },
+    "experience": [
+      {
+        "company": "Sugar and Spice Book Co.",
+        "location": "Nashville, TN",
+        "industry": "Retail",
+        "start": "2025",
+        "end": "Present",
+        "logo": "/images/logos/sugarandspice.svg",
+        "roles": [
+          {
+            "title": "Chief Operating Officer?",
+            "start": "2025",
+            "end": "Present",
+            "impact": "Owned and operated the systems behind Sugar & Spice Book Co., supporting day-to-day execution across retail, events, and e-commerce.",
+            "highlights": []
+          }
+        ],
+        "tech": [],
+        "domains": ["Small Business", "Operations", "Execution"]
+      },
+      {
+        "company": "Duran Family",
+        "location": "Nashville, TN",
+        "start": "2019",
+        "end": "Present",
+        "logo": "/images/logos/digitaltenn.svg",
+        "roles": [
+          {
+            "title": "Husband",
+            "start": "2019",
+            "end": "Present",
+            "impact": "Learning to build, prioritize, and show up consistently in a system shared with someone else.",
+            "highlights": []
+          },
+          {
+            "title": "Dad",
+            "start": "2022",
+            "end": "Present",
+            "impact": "Learning to build, prioritize, and show up consistently in the most important system I’m responsible for.",
+            "highlights": []
+          }
+        ],
+        "tech": [],
+        "domains": ["Love", "Service", "Protection"]
+      },
+      {
+        "company": "DigitalTenn",
+        "location": "Nashville, TN",
+        "industry": "Consulting",
+        "start": "2021",
+        "end": "Present",
+        "logo": "/images/logos/digitaltenn.svg",
+        "roles": [
+          {
+            "title": "Learning by Building",
+            "start": "2015",
+            "end": "Present",
+            "impact": "Built products and systems across different domains to understand how things work",
+            "highlights": [
+              "Explored different product domains and business models",
+              "Focused on understanding systems and operations",
+              "Learned through hands-on building and execution"
+            ]
+          }
+        ],
+        "tech": [],
+        "domains": ["Product", "Systems", "Operations"]
+      }
+    ],
+    "projects": [
+      {
+        "slug": "personal-project-1",
+        "title": "Personal Project 1",
+        "tagline": "A personal build",
+        "summary": "A project I built to explore a particular problem or technology.",
+        "stack": [{ "name": "Various" }],
+        "links": [],
+        "heroImage": null,
+        "content": "## Overview\n\nThis is a placeholder for a personal project. Replace with your actual personal projects."
+      },
+      {
+        "slug": "personal-project-2",
+        "title": "Personal Project 2",
+        "tagline": "Another personal build",
+        "summary": "Another project exploring different ideas and technologies.",
+        "stack": [{ "name": "Various" }],
+        "links": [],
+        "heroImage": null,
+        "content": "## Overview\n\nThis is a placeholder for a personal project. Replace with your actual personal projects."
+      }
+    ],
+    "skills": {
+      "Principles": [
+        "Execution over theory",
+        "Customer reality",
+        "Systems thinking"
+      ],
+      "Interests": [
+        "Product building",
+        "Small business",
+        "Operations",
+        "How things work"
+      ],
+      "Approach": [
+        "Learn by doing",
+        "Stay close to execution",
+        "Build and iterate"
+      ]
+    },
+    "education": [
+      {
+        "school": "Real World",
+        "degree": "Learning by Building",
+        "dates": "Ongoing",
+        "notes": "Learning through hands-on experience and execution",
+        "logo": null
+      },
+      {
+        "school": "Belmont University",
+        "degree": "B.B.A. Music Business",
+        "dates": "2014-2017",
+        "notes": "",
+        "logo": "/images/logos/belmont-university.svg"
+      }
+    ],
+    "contact": {
+      "heading": "Get in Touch",
+      "copy": "Say hi, share an idea, or just connect.",
+      "buttonLabel": "Say Hi"
+    }
+  }
+}

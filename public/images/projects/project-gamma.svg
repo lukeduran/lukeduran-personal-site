@@ -1,0 +1,16 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gammaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#ef4444;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#gammaGrad)"/>
+  <rect x="300" y="150" width="250" height="180" rx="12" fill="#f59e0b" opacity="0.12" transform="rotate(-5 425 240)"/>
+  <rect x="650" y="170" width="250" height="180" rx="12" fill="#ef4444" opacity="0.1" transform="rotate(5 775 260)"/>
+  <circle cx="200" cy="400" r="70" fill="#f97316" opacity="0.1"/>
+  <circle cx="1000" cy="200" r="50" fill="#f59e0b" opacity="0.12"/>
+  <text x="600" y="320" font-family="system-ui, sans-serif" font-size="18" fill="#6b7280" text-anchor="middle" opacity="0.4">Project Gamma - E-commerce Suite</text>
+  <text x="600" y="350" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af" text-anchor="middle" opacity="0.3">Optimization Tools</text>
+</svg>
