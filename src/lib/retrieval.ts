@@ -36,7 +36,17 @@ function cosineSimilarity(a: number[], b: number[]): number {
   return dot / (Math.sqrt(normA) * Math.sqrt(normB));
 }
 
-export async function retrieveChunks(query: string, topK = 5): Promise<Chunk[]> {
+// Minimum cosine similarity score to consider a chunk relevant.
+// Queries that score below this threshold against all chunks are considered
+// out-of-scope and should be deflected rather than answered.
+const MIN_RELEVANCE_SCORE = 0.35;
+
+export interface RetrievalResult {
+  chunks: Chunk[];
+  confident: boolean;
+}
+
+export async function retrieveChunks(query: string, topK = 5): Promise<RetrievalResult> {
   const response = await getOpenAI().embeddings.create({
     model: 'text-embedding-3-small',
     input: query,
@@ -52,9 +62,15 @@ export async function retrieveChunks(query: string, topK = 5): Promise<Chunk[]> 
 
   scored.sort((a, b) => b.score - a.score);
 
-  return scored.slice(0, topK).map(({ chunk }) => ({
-    id: chunk.id,
-    label: chunk.label,
-    content: chunk.content,
-  }));
+  const topScored = scored.slice(0, topK);
+  const confident = topScored[0]?.score >= MIN_RELEVANCE_SCORE;
+
+  return {
+    chunks: topScored.map(({ chunk }) => ({
+      id: chunk.id,
+      label: chunk.label,
+      content: chunk.content,
+    })),
+    confident,
+  };
 }

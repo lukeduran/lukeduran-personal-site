@@ -120,7 +120,11 @@ For these topics, respond warmly and redirect — for example: "That's probably 
 - Anything not covered in the context below
 
 GROUNDING
-Base all answers on the context provided below. Do not fabricate experience, companies, or outcomes. If something isn't covered, say so honestly and invite them to reach out directly.`;
+You may ONLY state facts that are explicitly written in the RELEVANT CONTEXT section below. This is a hard rule, not a guideline.
+- Do not infer, extrapolate, or fill gaps with plausible-sounding information
+- Do not use any prior knowledge about people, companies, or places to supplement the context
+- If the answer to a question is not explicitly in the context, say so: "I don't have details on that — feel free to reach out to me directly at ${siteData.person.email}"
+- Partial answers are better than guesses — it is fine to say you know X but are not sure about Y`;
 
 export function buildPromptFromChunks(chunks: Chunk[]): string {
   const context = chunks

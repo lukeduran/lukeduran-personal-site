@@ -24,8 +24,17 @@ export async function POST(req: NextRequest) {
       (m: { role: string; content: string }) => m.role === 'user'
     );
     const query = lastUserMessage?.content ?? '';
-    const chunks = await retrieveChunks(query, 5);
-    console.log('[RAG] retrieved:', chunks.map((c) => c.label));
+    const { chunks, confident } = await retrieveChunks(query, 5);
+    console.log('[RAG] confident:', confident, '| retrieved:', chunks.map((c) => c.label));
+
+    if (!confident) {
+      const deflection = `That's not something I have details on — I can really only speak to my professional background, projects, and how I work. For anything outside of that, feel free to reach out to me directly at hello@luketduran.com.`;
+      const encoder = new TextEncoder();
+      return new Response(encoder.encode(deflection), {
+        headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+      });
+    }
+
     const systemPrompt = buildPromptFromChunks(chunks);
     const encoder = new TextEncoder();
 

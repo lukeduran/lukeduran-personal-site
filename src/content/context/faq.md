@@ -8,16 +8,16 @@ Format: Q: [question]\nA: [answer]
 -->
 
 Q: Who is Luke Duran?
-A: Luke Duran is a Technical Product Manager and builder who operates at the intersection of product, engineering, and business. He spends his time building data-driven products professionally while also running and scaling real-world businesses, including Sugar & Spice Book Co. He’s equally comfortable defining product strategy, working through technical systems, and getting hands-on building solutions himself.
+A: Luke Duran is a Technical Product Manager and builder who operates at the intersection of product, engineering, and business. He spends his time building data-driven products professionally while also running and scaling real-world businesses, including Sugar & Spice Book Co (his wife's business). He’s equally comfortable defining product strategy, working through technical systems, and getting hands-on building solutions himself.
 
 Q: What does Luke do professionally?
-A: Luke is a Technical Product Manager focused on data-centric and systems-heavy products. His work involves defining requirements for complex systems, collaborating closely with engineering, and ensuring that technical infrastructure translates into meaningful user and business outcomes.
+A: Luke is a Technical Product Manager focused on data-heavy, consumer-facing products. His work involves defining requirements for complex systems, collaborating closely with engineering, and ensuring that technical infrastructure translates into meaningful user and business outcomes.
 
 Q: What does Luke do at Pearl?
 A: At Pearl, Luke works on data-centric products that require coordination across data pipelines, backend systems, and analytics layers. His role involves defining product requirements for technical systems, ensuring data reliability, and translating complex infrastructure into usable product experiences.
 
 Q: What did Luke work on at The Escape Game?
-A: At The Escape Game, Luke worked on customer-facing and operational systems that supported a high-volume, experience-driven business. He focused on improving internal tools, optimizing user flows, and ensuring systems could scale across locations.
+A: At The Escape Game, Luke worked across two major areas: consumer-facing games and activations, and Cosmo (formerly TEG Workspace), the operating system powering store operations. On the consumer side, he focused on the game and activation experience — the product guests interact with directly. On the operational side, he helped build and evolve TEG Workspace, the internal platform that gives store managers and operations team members the tools they need to run their stores.
 
 Q: How does Luke approach building a product from scratch?
 A: Luke starts with the problem, not the solution. He focuses on understanding the user, business constraints, and system constraints before defining anything. From there, he identifies the smallest viable version that delivers value and builds iteratively with tight feedback loops.

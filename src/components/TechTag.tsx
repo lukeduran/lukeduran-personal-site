@@ -12,6 +12,18 @@ import {
   siTypescript,
   siFirebase,
   siWindsurf,
+  siFlutter,
+  siDart,
+  siClojure,
+  siSnowflake,
+  siPosthog,
+  siNextdotjs,
+  siShopify,
+  siWebflow,
+  siMixpanel,
+  siThreedotjs,
+  siMysql,
+  siWordpress,
 } from 'simple-icons';
 import type { SimpleIcon } from 'simple-icons';
 import type { TechItem } from '@/lib/types';
@@ -29,6 +41,18 @@ const TECH_ICONS: Record<string, SimpleIcon> = {
   TypeScript: siTypescript,
   Firebase: siFirebase,
   Windsurf: siWindsurf,
+  Flutter: siFlutter,
+  Dart: siDart,
+  Clojure: siClojure,
+  Snowflake: siSnowflake,
+  PostHog: siPosthog,
+  'Next.js': siNextdotjs,
+  Shopify: siShopify,
+  Webflow: siWebflow,
+  Mixpanel: siMixpanel,
+  'Three.js': siThreedotjs,
+  MySQL: siMysql,
+  Wordpress: siWordpress,
 };
 
 interface TechTagProps {
