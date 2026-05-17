@@ -2,6 +2,9 @@
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { SiteMode } from './types';
+import siteData from '../content/site.json';
+
+const personalModeEnabled = siteData.sections.enablePersonalMode ?? false;
 
 interface ModeContextType {
   mode: SiteMode;
@@ -27,13 +30,12 @@ export function ModeProvider({ children }: { children: ReactNode }) {
       const params = new URLSearchParams(window.location.search);
       const urlMode = params.get('mode') as SiteMode | null;
       
-      if (urlMode === 'professional' || urlMode === 'personal') {
+      if (urlMode === 'professional' || (urlMode === 'personal' && personalModeEnabled)) {
         setModeState(urlMode);
         localStorage.setItem('siteMode', urlMode);
       } else {
-        // Then check localStorage
         const stored = localStorage.getItem('siteMode') as SiteMode | null;
-        if (stored === 'professional' || stored === 'personal') {
+        if (stored === 'professional' || (stored === 'personal' && personalModeEnabled)) {
           setModeState(stored);
         }
       }

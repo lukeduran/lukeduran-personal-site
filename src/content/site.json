@@ -20,7 +20,8 @@
   },
   "sections": {
     "showProjects": false,
-    "showEducation": true
+    "showEducation": true,
+    "enablePersonalMode": false
   },
   "professional": {
     "hero": {

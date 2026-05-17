@@ -34,7 +34,7 @@ export default function Nav() {
               {modeContent.hero.name}
             </Link>
             <div className="flex items-center gap-3">
-              <ModeToggle />
+              {content.sections.enablePersonalMode && <ModeToggle />}
               <button
                 onClick={() => setIsMenuOpen(true)}
                 className="rounded-lg p-2 text-foreground/70 transition-colors hover:bg-muted hover:text-foreground focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] min-w-[44px] touch-manipulation"

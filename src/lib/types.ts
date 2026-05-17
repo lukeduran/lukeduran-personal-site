@@ -57,6 +57,7 @@ export interface SiteContent {
   sections: {
     showProjects: boolean;
     showEducation?: boolean;
+    enablePersonalMode?: boolean;
   };
   professional: ModeContent;
   personal: ModeContent;
