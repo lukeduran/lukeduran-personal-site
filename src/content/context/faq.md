@@ -8,13 +8,13 @@ Format: Q: [question]\nA: [answer]
 -->
 
 Q: Who is Luke Duran?
-A: Luke Duran is a Technical Product Manager and builder who operates at the intersection of product, engineering, and business. He spends his time building data-driven products professionally while also running and scaling real-world businesses, including Sugar & Spice Book Co (his wife's business). He’s equally comfortable defining product strategy, working through technical systems, and getting hands-on building solutions himself.
+A: Luke Duran is a Technical Product Manager and builder who operates at the intersection of product, engineering, and business. He spends his time building data-driven products professionally while also running and scaling real-world businesses, including Sugar and Spice Book Co (his wife's business). He’s equally comfortable defining product strategy, working through technical systems, and getting hands-on building solutions himself.
 
 Q: What does Luke do professionally?
 A: Luke is a Technical Product Manager focused on data-heavy, consumer-facing products. His work involves defining requirements for complex systems, collaborating closely with engineering, and ensuring that technical infrastructure translates into meaningful user and business outcomes.
 
 Q: What does Luke do at Pearl?
-A: At Pearl, Luke works on data-centric products that require coordination across data pipelines, backend systems, and analytics layers. His role involves defining product requirements for technical systems, ensuring data reliability, and translating complex infrastructure into usable product experiences.
+A: At Pearl, Luke works on data-centric products that require coordination across data pipelines, backend systems, and UI/UX design. His role involves defining product requirements for technical systems, ensuring data reliability, and translating complex infrastructure into usable product experiences.
 
 Q: What did Luke work on at The Escape Game?
 A: At The Escape Game, Luke worked across two major areas: consumer-facing games and activations, and Cosmo (formerly TEG Workspace), the operating system powering store operations. On the consumer side, he focused on the game and activation experience — the product guests interact with directly. On the operational side, he helped build and evolve TEG Workspace, the internal platform that gives store managers and operations team members the tools they need to run their stores.
@@ -49,10 +49,10 @@ A: Luke has hands-on experience building AI-powered tools, including chatbots an
 Q: Why did Luke build an AI chatbot for his portfolio?
 A: Luke built the chatbot to demonstrate how he thinks about product, not just talk about it. It’s a practical example of applying retrieval-augmented generation to solve a real problem—helping people quickly understand his experience, thinking, and projects.
 
-Q: What is Sugar & Spice Book Co.?
-A: Sugar & Spice Book Co. is a romance-focused bookstore that operates as both a retail business and an event-driven brand. It combines mobile retail, ecommerce, and large-scale events to create a community around romance readers.
+Q: What is Sugar and Spice Book Co.?
+A: Sugar and Spice Book Co. is a romance-focused bookstore that operates as both a retail business and an event-driven brand. It combines mobile retail, ecommerce, and large-scale events to create a community around romance readers.
 
-Q: What is Luke’s role in Sugar & Spice Book Co.?
+Q: What is Luke’s role in Sugar and Spice Book Co.?
 A: Luke helps run and scale the business alongside his wife. He focuses on systems, operations, ecommerce, and long-term strategy—building the infrastructure needed to grow the brand.
 
 Q: What has Luke built outside of his full-time job?
@@ -71,7 +71,7 @@ Q: What motivates Luke?
 A: Luke is motivated by building things that work in the real world. He values ownership, execution, and seeing ideas turn into systems that people actually use.
 
 Q: Tell me about a time Luke built something from scratch.
-A: Luke has built multiple systems from scratch, including operational and ecommerce systems for Sugar & Spice Book Co. This required designing workflows, managing inventory constraints, and building scalable processes in a resource-constrained environment.
+A: Luke has built multiple systems from scratch, including operational and ecommerce systems for Sugar and Spice Book Co. This required designing workflows, managing inventory constraints, and building scalable processes in a resource-constrained environment.
 
 Q: Tell me about a time Luke handled ambiguity.
 A: Luke regularly operates in ambiguous environments, especially when building new products or entering new markets. He approaches this by identifying key unknowns, testing assumptions quickly, and iterating based on what he learns.
