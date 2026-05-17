@@ -58,7 +58,7 @@ export default function Home() {
           <div className="relative">
             {modeContent.experience.map((exp, idx) => (
               <TimelineItem
-                key={idx}
+                key={exp.company}
                 experience={exp}
                 isLast={idx === modeContent.experience.length - 1}
                 index={idx}

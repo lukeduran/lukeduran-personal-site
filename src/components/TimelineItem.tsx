@@ -36,7 +36,7 @@ export default function TimelineItem({ experience, isLast = false, index }: Time
     >
       {/* Vertical connector — desktop only */}
       {!isLast && (
-        <div className="absolute hidden sm:block left-6 top-12 h-full w-0.5 bg-accent/30" />
+        <div className="absolute hidden sm:block left-12 top-24 h-full w-0.5 bg-accent/30" />
       )}
       <div className="relative flex gap-6">
 
@@ -50,15 +50,15 @@ export default function TimelineItem({ experience, isLast = false, index }: Time
             delay: index * 0.15 + 0.1,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="relative z-10 hidden sm:flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-border bg-background shadow-sm"
+          className="relative z-10 hidden sm:flex h-24 w-24 shrink-0 items-center justify-center rounded-lg border border-border bg-background shadow-sm"
         >
           {experience.logo ? (
             <Image
               src={experience.logo}
               alt={`${experience.company} logo`}
-              width={48}
-              height={48}
-              className="h-full w-full object-contain p-2"
+              width={96}
+              height={96}
+              className="h-full w-full object-contain p-3"
             />
           ) : (
             <div className="flex h-full w-full items-center justify-center bg-muted/50">
@@ -87,14 +87,14 @@ export default function TimelineItem({ experience, isLast = false, index }: Time
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3">
                 {/* Logo inline on mobile */}
-                <div className="flex sm:hidden h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-background shadow-sm">
+                <div className="flex sm:hidden h-16 w-16 shrink-0 items-center justify-center rounded-lg border border-border bg-background shadow-sm">
                   {experience.logo ? (
                     <Image
                       src={experience.logo}
                       alt={`${experience.company} logo`}
-                      width={36}
-                      height={36}
-                      className="h-full w-full object-contain p-1.5"
+                      width={64}
+                      height={64}
+                      className="h-full w-full object-contain p-2"
                     />
                   ) : (
                     <span className="text-xs font-medium text-foreground/40">

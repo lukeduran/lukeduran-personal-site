@@ -388,7 +388,7 @@
     "name": "Luke Duran",
     "role": "I Like Building Things",
     "location": "Nashville, TN",
-    "valueProp": "Building, operating, and leaving things better than I found them — at work and at home.",
+    "valueProp": "Building, operating, and leaving things better than I found them - at work and at home.",
     "currently": "helping my wife build a national romance-only bookstore brand out of the back of a trailer and teaching my toddler about the world.",
     "currentlyEnabled": true,
     "badges": [
@@ -399,7 +399,7 @@
     "headshot": "/images/headshot.png"
   },
   "about": {
-    "paragraph": "I’m a dad, a builder, and someone who likes to stay close to the work. I spend a lot of my time building and running small businesses, shipping ideas, and learning by doing — whether that’s working through messy systems, figuring things out as I go, or writing the occasional song when I need a creative reset. I’m most at home when I’m building something useful, taking responsibility for how it runs, and leaving things a little better than I found them — at work, at home, and everywhere in between.",
+    "paragraph": "I’m a dad, a builder, and someone who likes to stay close to the work. I spend a lot of my time building and running small businesses, shipping ideas, and learning by doing - whether that’s working through messy systems, figuring things out as I go, or writing the occasional song when I need a creative reset. I’m most at home when I’m building something useful, taking responsibility for how it runs, and leaving things a little better than I found them - at work, at home, and everywhere in between.",
     "bullets": []
   },
   "experience": [
@@ -412,7 +412,7 @@
       "logo": "/images/logos/sugarandspice.svg",
       "roles": [
         {
-          "title": "Chief Operating Officer?",
+          "title": "Chief Operating Officer",
           "start": "2025",
           "end": "Present",
           "impact": "Owned and operated the systems behind Sugar & Spice Book Co., supporting day-to-day execution across retail, events, and e-commerce.",
@@ -431,7 +431,7 @@
       "location": "Nashville, TN",
       "start": "2019",
       "end": "Present",
-      "logo": "/images/logos/digitaltenn.svg",
+      "logo": "/images/logos/duran-family.svg",
       "roles": [
         {
           "title": "Husband",
