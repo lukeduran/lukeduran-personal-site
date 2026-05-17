@@ -19,7 +19,7 @@ const { name } = content.professional.hero;
 const chatIntro = content.chat?.intro;
 
 const STARTERS = [
-  "What's your background?",
+  'Walk me through your experience.',
   'Tell me about a product you have shipped.',
   'How do you approach prioritization?',
   'What makes you different as a PM?',
@@ -267,19 +267,21 @@ export default function ChatPage() {
         </AnimatePresence>
 
         <div className="mx-auto flex max-w-3xl items-end gap-3">
-          <button
-            ref={sparkleRef}
-            onClick={() => setShowSuggestions((v) => !v)}
-            disabled={status !== 'idle'}
-            aria-label="Show suggested questions"
-            className={`flex h-11 w-11 flex-none items-center justify-center rounded-xl border transition-all disabled:opacity-30 ${
-              showSuggestions
-                ? 'border-accent bg-accent text-white'
-                : 'border-border bg-muted/30 text-foreground/40 hover:border-accent/40 hover:text-accent'
-            }`}
-          >
-            <Sparkles className="h-4 w-4" />
-          </button>
+          {!showStarters && (
+            <button
+              ref={sparkleRef}
+              onClick={() => setShowSuggestions((v) => !v)}
+              disabled={status !== 'idle'}
+              aria-label="Show suggested questions"
+              className={`flex h-11 w-11 flex-none items-center justify-center rounded-xl border transition-all disabled:opacity-30 ${
+                showSuggestions
+                  ? 'border-accent bg-accent text-white'
+                  : 'border-border bg-muted/30 text-foreground/40 hover:border-accent/40 hover:text-accent'
+              }`}
+            >
+              <Sparkles className="h-4 w-4" />
+            </button>
+          )}
           <textarea
             ref={inputRef}
             value={input}
