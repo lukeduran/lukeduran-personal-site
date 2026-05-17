@@ -5,7 +5,7 @@
     "url": "https://lukeduran.com"
   },
   "person": {
-    "email": "hello@luketduran.com",
+    "email": "lukeduran.career@gmail.com",
     "socials": {
       "linkedin": "https://linkedin.com/in/luketduran",
       "github": "https://github.com/lukeduran"
@@ -305,37 +305,6 @@
       ],
       "heroImage": "/images/projects/project-beta.svg",
       "content": "## Overview\n\nProject Beta addresses the challenges of remote team collaboration by providing a unified platform for communication, task management, and project tracking.\n\n## Key Features\n\n- Real-time messaging and notifications\n- Kanban-style task boards\n- Video conferencing integration\n- Automated workflow triggers\n\n## Impact\n\nUsed by 50+ teams to improve collaboration efficiency and reduce meeting overhead by 40%."
-    },
-    {
-      "slug": "project-gamma",
-      "title": "Project Gamma",
-      "tagline": "E-commerce Optimization Suite",
-      "summary": "A suite of tools that helps e-commerce businesses optimize their conversion rates through A/B testing and personalization.",
-      "stack": [
-        {
-          "name": "Vue.js"
-        },
-        {
-          "name": "Django"
-        },
-        {
-          "name": "PostgreSQL"
-        },
-        {
-          "name": "Docker"
-        },
-        {
-          "name": "Kubernetes"
-        }
-      ],
-      "links": [
-        {
-          "label": "View Prototype",
-          "url": "https://project-gamma.demo.com"
-        }
-      ],
-      "heroImage": "/images/projects/project-gamma.svg",
-      "content": "## Overview\n\nProject Gamma provides e-commerce businesses with powerful tools to test, optimize, and personalize their customer experience.\n\n## Key Features\n\n- Visual A/B testing builder\n- Real-time personalization engine\n- Conversion funnel analytics\n- Customer segmentation tools\n\n## Results\n\nHelped clients increase conversion rates by an average of 22% through data-driven optimization."
     }
   ],
   "skills": {

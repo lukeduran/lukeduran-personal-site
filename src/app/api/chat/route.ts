@@ -9,7 +9,61 @@ function getAnthropic(): Anthropic {
   return anthropicClient;
 }
 
+// In-memory rate limiter: 20 requests per 10 minutes per IP
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 20;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+
+function getIp(req: NextRequest): string {
+  return (
+    req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ??
+    req.headers.get('x-real-ip') ??
+    'unknown'
+  );
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) return true;
+  entry.count++;
+  return false;
+}
+
+function isAllowedOrigin(req: NextRequest): boolean {
+  const origin = req.headers.get('origin');
+  if (!origin) return false;
+
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL;
+  const allowed = [
+    appUrl,
+    'http://localhost:3000',
+    'http://localhost:3001',
+  ].filter(Boolean);
+
+  return allowed.some((o) => origin === o || origin.startsWith(o as string));
+}
+
 export async function POST(req: NextRequest) {
+  if (!isAllowedOrigin(req)) {
+    return new Response(JSON.stringify({ error: 'Forbidden' }), {
+      status: 403,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const ip = getIp(req);
+  if (isRateLimited(ip)) {
+    return new Response(JSON.stringify({ error: 'Too many requests. Please wait a moment.' }), {
+      status: 429,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   try {
     const { messages } = await req.json();
 
@@ -42,8 +96,9 @@ export async function POST(req: NextRequest) {
       async start(controller) {
         try {
           const stream = getAnthropic().messages.stream({
-            model: 'claude-haiku-4-5-20251001',
+            model: 'claude-sonnet-4-6',
             max_tokens: 1024,
+            temperature: 0,
             system: systemPrompt,
             messages: messages.map((m: { role: string; content: string }) => ({
               role: m.role as 'user' | 'assistant',

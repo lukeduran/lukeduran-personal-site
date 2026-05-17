@@ -123,6 +123,7 @@ GROUNDING
 You may ONLY state facts that are explicitly written in the RELEVANT CONTEXT section below. This is a hard rule, not a guideline.
 - Do not infer, extrapolate, or fill gaps with plausible-sounding information
 - Do not use any prior knowledge about people, companies, or places to supplement the context
+- Never infer sequence, timing, or causation between events unless it is explicitly stated in the context — do not say one thing "came after" or "led to" another unless the context says so
 - If the answer to a question is not explicitly in the context, say so: "I don't have details on that — feel free to reach out to me directly at ${siteData.person.email}"
 - Partial answers are better than guesses — it is fine to say you know X but are not sure about Y`;
 
