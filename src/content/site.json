@@ -19,7 +19,7 @@
     "intro": "Hi, I'm Luke! I'd love to connect in person, but this is a good place to start — ask it anything you'd ask me."
   },
   "sections": {
-    "showProjects": true,
+    "showProjects": false,
     "showEducation": true
   },
   "professional": {
@@ -347,18 +347,19 @@
       "Agile/Scrum"
     ],
     "Technical": [
-      "Full-Stack Development",
-      "System Architecture",
-      "API Design",
-      "Cloud Infrastructure",
-      "DevOps"
+      "SQL",
+      "Javascript",
+      "Python",
+      "AWS",
+      "AI/LLM Integration",
+      "Agentic Workflows"
     ],
     "Leadership": [
-      "SQL",
-      "Python",
-      "Data Visualization",
-      "A/B Testing",
-      "Machine Learning Basics"
+      "Entrepreneurship",
+      "Brand Building",
+      "Cross-Functional Leadership",
+      "Contractor Management",
+      "Stakeholder Communication"
     ]
   },
   "education": [
@@ -483,36 +484,7 @@
       ]
     }
   ],
-  "projects": [
-    {
-      "slug": "personal-project-1",
-      "title": "Personal Project 1",
-      "tagline": "A personal build",
-      "summary": "A project I built to explore a particular problem or technology.",
-      "stack": [
-        {
-          "name": "Various"
-        }
-      ],
-      "links": [],
-      "heroImage": null,
-      "content": "## Overview\n\nThis is a placeholder for a personal project. Replace with your actual personal projects."
-    },
-    {
-      "slug": "personal-project-2",
-      "title": "Personal Project 2",
-      "tagline": "Another personal build",
-      "summary": "Another project exploring different ideas and technologies.",
-      "stack": [
-        {
-          "name": "Various"
-        }
-      ],
-      "links": [],
-      "heroImage": null,
-      "content": "## Overview\n\nThis is a placeholder for a personal project. Replace with your actual personal projects."
-    }
-  ],
+  "projects": [],
   "skills": {
     "Principles": [
       "Execution over theory",

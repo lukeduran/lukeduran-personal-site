@@ -39,7 +39,7 @@ function cosineSimilarity(a: number[], b: number[]): number {
 // Minimum cosine similarity score to consider a chunk relevant.
 // Queries that score below this threshold against all chunks are considered
 // out-of-scope and should be deflected rather than answered.
-const MIN_RELEVANCE_SCORE = 0.35;
+const MIN_RELEVANCE_SCORE = 0.25;
 
 export interface RetrievalResult {
   chunks: Chunk[];

@@ -88,28 +88,35 @@ export function buildChunks(): Chunk[] {
     content: p.about.paragraph,
   });
 
-  // Experience — one chunk per role
+  // Experience — one chunk per company (all roles included)
   for (const exp of p.experience) {
-    for (const role of exp.roles) {
-      const techList = (exp.tech as TechEntry[])
-        .map((t) => (typeof t === 'string' ? t : t.name))
-        .join(', ');
-      const highlights = role.highlights.map((h) => `- ${h}`).join('\n');
-      const id = `exp-${exp.company.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${role.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+    const techList = (exp.tech as TechEntry[])
+      .map((t) => (typeof t === 'string' ? t : t.name))
+      .join(', ');
+    const id = `exp-${exp.company.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
-      chunks.push({
-        id,
-        label: `Experience: ${role.title} at ${exp.company}`,
-        content: [
-          `${role.title} at ${exp.company} (${exp.industry ?? ''}, ${role.start}–${role.end})`,
-          role.impact,
-          highlights,
-          techList ? `Tech: ${techList}` : '',
-        ]
-          .filter(Boolean)
-          .join('\n'),
-      });
-    }
+    const roleParts = exp.roles.map((role) => {
+      const highlights = role.highlights.map((h) => `- ${h}`).join('\n');
+      return [
+        `${role.title} (${role.start}–${role.end})`,
+        role.impact,
+        highlights,
+      ]
+        .filter(Boolean)
+        .join('\n');
+    });
+
+    chunks.push({
+      id,
+      label: `Experience: ${exp.company}`,
+      content: [
+        `${exp.company} (${exp.industry ?? ''}, ${exp.start}–${exp.end})`,
+        ...roleParts,
+        techList ? `Tech: ${techList}` : '',
+      ]
+        .filter(Boolean)
+        .join('\n\n'),
+    });
   }
 
   // Projects — one chunk per project
